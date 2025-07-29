@@ -1,59 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTEZTTWX7S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-RTEZTTWX7S');
-</script>
     <meta charset="utf-8" />
-    <title>Loading...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FX Beast - Forex Signals</title>
+
     <style>
       body {
         margin: 0;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 0;
         background-color: #121212;
         color: white;
-        font-family: Arial, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
       }
 
-      .spinner {
-        border: 6px solid rgba(255, 255, 255, 0.2);
-        border-top: 6px solid #6c47ff;
+      img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
         border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        animation: spin 1s linear infinite;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border: 3px solid #ff4747;
+        box-shadow: 0 0 10px #ff4747, 0 0 20px #ff4747;
       }
 
-      @keyframes spin {
+      h1 {
+        font-size: 2.4em;
+        margin: 0;
+        color: #ffffff;
+      }
+
+      .subtitle {
+        font-size: 1.1em;
+        color: #aaa;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        max-width: 600px;
+      }
+
+      .why-join {
+        text-align: left;
+        max-width: 600px;
+        background-color: #1e1e1e;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+        margin-bottom: 30px;
+      }
+
+      .why-join h2 {
+        margin-top: 0;
+        font-size: 1.6em;
+        color: #ff4747;
+        text-shadow: 0 0 5px #ff4747, 0 0 10px #ff4747;
+      }
+
+      .why-join ul {
+        padding-left: 20px;
+        line-height: 1.6;
+      }
+
+      .why-join ul li {
+        margin-bottom: 10px;
+        color: #ccc;
+      }
+
+      .join-button {
+        background-color: #ff4747;
+        color: white;
+        border: none;
+        padding: 14px 28px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        box-shadow: 0 0 12px #ff4747, 0 0 24px #ff4747;
+        animation: pulseGlow 2s infinite ease-in-out;
+      }
+
+      .join-button:hover {
+        background-color: #ff5c5c;
+        box-shadow: 0 0 16px #ff5c5c, 0 0 32px #ff5c5c;
+      }
+
+      @keyframes pulseGlow {
         0% {
-          transform: rotate(0deg);
+          box-shadow: 0 0 8px #ff4747, 0 0 16px #ff4747;
+        }
+        50% {
+          box-shadow: 0 0 16px #ff4747, 0 0 32px #ff4747;
         }
         100% {
-          transform: rotate(360deg);
+          box-shadow: 0 0 8px #ff4747, 0 0 16px #ff4747;
         }
       }
 
-      .loading-text {
-        margin-top: 16px;
-        font-size: 18px;
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 1.8em;
+        }
+
+        .subtitle {
+          font-size: 1em;
+        }
+
+        .why-join {
+          text-align: center;
+          padding: 15px;
+        }
+
+        .why-join ul {
+          padding-left: 0;
+        }
       }
     </style>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTEZTTWX7S"></script>
     <script>
-      setTimeout(() => {
-        window.location.href = "https://t.me/IndianFxBeast"; 
-      }, 1500); 
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-RTEZTTWX7S");
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", "2098250687345058");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=2098250687345058&ev=PageView&noscript=1"
+      />
+    </noscript>
+
+    <script>
+      function joinChannel() {
+        gtag("event", "join_channel_click", {
+          event_category: "engagement",
+          event_label: "Telegram Join Button",
+        });
+        fbq("track", "Lead");
+        window.location.href = "https://t.me/IndianFxBeast";
+      }
     </script>
   </head>
+
   <body>
-    <div class="spinner"></div>
-    <div class="loading-text">Loading...</div>
+    <img src="/photo_2025-07-29_17-19-36.jpg" alt="FX Beast Logo" />
+
+    <h1>FX Beast</h1>
+    <p class="subtitle">
+      Join our exclusive Telegram channel to get real-time Forex signals, expert
+      market analysis, and profitable trading setups daily.
+    </p>
+
+    <div class="why-join">
+      <h2>Why Join Us?</h2>
+      <ul>
+        <li>✅ Accurate & timely Forex signals</li>
+        <li>✅ Daily market insights & analysis</li>
+        <li>✅ Easy-to-follow trade setups</li>
+        <li>✅ Suitable for beginners & pros</li>
+      </ul>
+    </div>
+
+    <button class="join-button" onclick="joinChannel()">Join the Channel</button>
   </body>
 </html>
