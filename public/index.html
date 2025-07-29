@@ -27,7 +27,6 @@
         margin-top: 40px;
         margin-bottom: 20px;
         border: 3px solid #ff4747;
-        box-shadow: 0 0 10px #ff4747, 0 0 20px #ff4747;
       }
 
       h1 {
@@ -45,30 +44,41 @@
       }
 
       .why-join {
-        text-align: left;
         max-width: 600px;
         background-color: #1e1e1e;
-        padding: 20px;
+        padding: 20px 25px;
         border-radius: 12px;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
         margin-bottom: 30px;
+        text-align: left;
       }
 
       .why-join h2 {
-        margin-top: 0;
         font-size: 1.6em;
-        color: #ff4747;
-        text-shadow: 0 0 5px #ff4747, 0 0 10px #ff4747;
+        color: #ff3b3b;
+        text-shadow: 0 0 8px #ff3b3b;
+        margin-bottom: 15px;
+        text-align: center;
       }
 
       .why-join ul {
-        padding-left: 20px;
-        line-height: 1.6;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
       }
 
       .why-join ul li {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         color: #ccc;
+        display: flex;
+        align-items: center;
+      }
+
+      .why-join ul li::before {
+        content: "✅";
+        margin-right: 10px;
+        font-size: 1.1em;
+        flex-shrink: 0;
       }
 
       .join-button {
@@ -79,26 +89,13 @@
         font-size: 16px;
         border-radius: 8px;
         cursor: pointer;
-        transition: background-color 0.3s, box-shadow 0.3s;
-        box-shadow: 0 0 12px #ff4747, 0 0 24px #ff4747;
-        animation: pulseGlow 2s infinite ease-in-out;
+        transition: background-color 0.3s;
+        box-shadow: 0 0 10px #ff4747;
       }
 
       .join-button:hover {
-        background-color: #ff5c5c;
-        box-shadow: 0 0 16px #ff5c5c, 0 0 32px #ff5c5c;
-      }
-
-      @keyframes pulseGlow {
-        0% {
-          box-shadow: 0 0 8px #ff4747, 0 0 16px #ff4747;
-        }
-        50% {
-          box-shadow: 0 0 16px #ff4747, 0 0 32px #ff4747;
-        }
-        100% {
-          box-shadow: 0 0 8px #ff4747, 0 0 16px #ff4747;
-        }
+        background-color: #0b64ca;
+        box-shadow: 0 0 12px #0b64ca;
       }
 
       @media (max-width: 600px) {
@@ -111,12 +108,13 @@
         }
 
         .why-join {
-          text-align: center;
-          padding: 15px;
+          text-align: left;
+          padding: 18px 16px;
+          margin: 20px 10px;
         }
 
-        .why-join ul {
-          padding-left: 0;
+        .why-join ul li {
+          font-size: 0.95em;
         }
       }
     </style>
@@ -161,6 +159,7 @@
         src="https://www.facebook.com/tr?id=2098250687345058&ev=PageView&noscript=1"
       />
     </noscript>
+    <!-- End Meta Pixel Code -->
 
     <script>
       function joinChannel() {
@@ -186,10 +185,10 @@
     <div class="why-join">
       <h2>Why Join Us?</h2>
       <ul>
-        <li>✅ Accurate & timely Forex signals</li>
-        <li>✅ Daily market insights & analysis</li>
-        <li>✅ Easy-to-follow trade setups</li>
-        <li>✅ Suitable for beginners & pros</li>
+        <li>Accurate & timely Forex signals</li>
+        <li>Daily market insights & analysis</li>
+        <li>Easy-to-follow trade setups</li>
+        <li>Suitable for beginners & pros</li>
       </ul>
     </div>
 
